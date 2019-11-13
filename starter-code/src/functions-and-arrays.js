@@ -107,6 +107,17 @@ const wordsUnique = [
   'bring'
 ];
 
+function uniquifyArray(array) {
+  
+  let wihtoutRepeteas = array.filter((valor, indiceActual, arreglo) => arreglo.indexOf(valor) === indiceActual);
+  
+  return "wihtout words repeates is:", wihtoutRepeteas;
+}
+
+/* Test
+uniquifyArray(wordsUnique);
+*/
+
 // Iteration #6: Find elements
 const wordsFind = [
   'machine',
